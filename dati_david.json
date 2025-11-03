@@ -1,0 +1,201 @@
+{
+    // ===============================
+    // 👤 PROFILO PERSONALE COMPLETO
+    // ===============================
+  
+    "general_profile": {
+      "nationality": "Italiana",
+      "personality": "Razionale, organizzata, con mentalità ingegneristica e orientata ai risultati.",
+      "communication_style": "Preferisce contenuti scritti, chiari, sintetici e strutturati.",
+      "values": ["autonomia", "guadagno proporzionato all’impegno", "chiarezza", "ordine", "razionalità", "concretezza", "visione a lungo termine"]
+    },
+  
+    // ===============================
+    // 🎓 FORMAZIONE E STUDI
+    // ===============================
+  
+    "education": {
+      "bachelor": {
+        "degree": "Ingegneria Industriale",
+        "status": "conseguita"
+      },
+      "master": {
+        "degree": "Ingegneria Meccanica",
+        "status": "in corso"
+      },
+      "study_method": {
+        "approach": [
+          "Durante le lezioni: sistema e sottolinea gli appunti.",
+          "Dopo le lezioni: legge, comprende i concetti e poi ripete per fissarli.",
+          "Usa timer da 5–10 minuti per gestire pause e concentrazione."
+        ]
+      },
+      "representative_role": "Rappresentante degli studenti di corso e di dipartimento in ingegneria industriale."
+    },
+  
+    // ===============================
+    // 🧠 COMPETENZE TECNICHE
+    // ===============================
+  
+    "skills": {
+      "technical": [
+        "Python (livello intermedio)",
+        "Analisi tecnica e meccanica (stabilità, ottimizzazione, progettazione)",
+        "Calcolo di vertici e piastre stabilizzatrici in ambito plasma o fisica applicata"
+      ],
+      "digital": [
+        "Sviluppo web/app in Python",
+        "Automazioni e prototipazione MVP",
+        "Concettualizzazione e sviluppo di tool per la gestione fiscale (forfettari)"
+      ],
+      "management": [
+        "Gestione di affitti brevi (Villa Nadia)",
+        "Ottimizzazione listing su Booking",
+        "Gestione operativa e guest experience"
+      ]
+    },
+  
+    // ===============================
+    // 💼 ESPERIENZE E PROGETTI
+    // ===============================
+  
+    "projects_and_experiences": [
+      {
+        "title": "Villa Nadia",
+        "description": "Villa di grandi dimensioni con piscina privata di acqua salata, gestita come affitto breve su Booking.",
+        "role": "Proprietario e gestore",
+        "focus": ["gestione operativa", "accoglienza ospiti", "ottimizzazione delle recensioni"]
+      },
+      {
+        "title": "App gestione tasse per forfettari",
+        "description": "Progetto in sviluppo per semplificare la gestione fiscale e contabile per titolari di Partita IVA in regime forfettario.",
+        "status": "concept → MVP",
+        "skills_used": ["Python", "logica fiscale", "user experience semplificata"]
+      },
+      {
+        "title": "Analisi GR e piastre stabilizzatrici",
+        "description": "Studio tecnico-ingegneristico per riduzione del Growth Rate tramite ottimizzazione di angoli e geometrie.",
+        "focus": ["analisi dati", "ottimizzazione", "modellazione geometrica"]
+      }
+    ],
+  
+    // ===============================
+    // 🚀 OBIETTIVI E DIREZIONE FUTURA
+    // ===============================
+  
+    "goals": {
+      "short_term": [
+        "Completare la laurea magistrale in Ingegneria Meccanica",
+        "Sviluppare l’app fiscale per forfettari",
+        "Ottimizzare la gestione e la redditività di Villa Nadia"
+      ],
+      "long_term": [
+        "Trovare equilibrio tra carriera ingegneristica, consulenza e imprenditoria",
+        "Costruire una strategia di vita che unisca politica, business e crescita personale"
+      ],
+      "motivation": "Crescita personale e professionale, autonomia e realizzazione concreta dei progetti."
+    },
+  
+    // ===============================
+    // 🧩 ALLENAMENTO E SALUTE
+    // ===============================
+  
+    "fitness_and_health": {
+      "goal": "Ipertrofia muscolare con leggero calo del grasso addominale",
+      "training_schedule": {
+        "frequency": "2 volte a settimana (a volte 3)",
+        "structure": {
+          "Day_1": "Esercizi contrassegnati da numeri",
+          "Day_2": "Esercizi contrassegnati da lettere"
+        },
+        "cardio": "5 minuti di riscaldamento e 5 minuti finali",
+        "notes": "Allenamento breve ma intenso, con focus su ipertrofia"
+      },
+      "skin": "Pelle acneica"
+    },
+  
+    // ===============================
+    // 🌴 HOBBY E VITA PERSONALE
+    // ===============================
+  
+    "personal_life": {
+      "hobbies": [
+        "Canoa gonfiabile (usata solo con bel tempo)",
+        "Attività all’aperto",
+        "Allenamento fisico",
+        "Viaggi e vacanze con amici"
+      ],
+      "travel": {
+        "planned_trip": {
+          "destination": "Riomaggiore, Cinque Terre",
+          "dates": "26 luglio – 2 agosto 2025",
+          "details": "Viaggio con amici, spostamenti in treno, visita dei punti migliori delle Cinque Terre."
+        }
+      },
+      "preferences": {
+        "weather": "Preferisce attività solo con bel tempo.",
+        "communication": "Predilige scrittura e testi chiari piuttosto che call o messaggi vocali."
+      }
+    },
+  
+    // ===============================
+    // 💬 INTERESSI STRATEGICI E VISIONE
+    // ===============================
+  
+    "strategic_and_political_interest": {
+      "political_interest": "Interessato al lato strategico della politica: governare, decidere, potere.",
+      "entrepreneurial_interest": "Motivato da autonomia personale e guadagno.",
+      "career_direction": "Valuta se proseguire verso un lavoro ingegneristico o una carriera nella consulenza.",
+      "philosophy": "Integra politica, imprenditoria e carriera da dipendente in una visione strategica unificata."
+    },
+  
+    // ===============================
+    // 🔧 META DATI PER CURSOR
+    // ===============================
+  
+    "cursor_usage": {
+      "tone": "professionale, concreto e sintetico, ma umano.",
+      "intended_use": [
+        "Creazione del sito personale",
+        "Generazione di bio e testi coerenti",
+        "Costruzione di portfolio e sezioni progetto",
+        "Sviluppo di contenuti per app e blog"
+      ],
+      "style_guide": {
+        "keywords": [
+          "Ingegneria meccanica",
+          "Sviluppo Python",
+          "Partita IVA forfettario",
+          "Gestione affitti brevi",
+          "Villa Nadia",
+          "Autonomia",
+          "Consulenza",
+          "Startup"
+        ],
+        "recommended_sections": [
+          "Hero (titolo e sottotitolo)",
+          "About me",
+          "Progetti e Portfolio",
+          "Servizi / Cosa faccio",
+          "Contatti e CTA"
+        ]
+      }
+    },
+  
+    // ===============================
+    // 🕓 CRONOLOGIA EVENTI
+    // ===============================
+  
+    "timeline": [
+      { "date": "Triennale", "event": "Laurea in Ingegneria Industriale" },
+      { "date": "Attuale", "event": "Studente magistrale in Ingegneria Meccanica" },
+      { "date": "2024-11", "event": "Analisi Growth Rate e piastre stabilizzatrici" },
+      { "date": "2025-02", "event": "Gestione affitti brevi di Villa Nadia su Booking" },
+      { "date": "2025-03", "event": "Uso della canoa gonfiabile solo con bel tempo" },
+      { "date": "2025-05", "event": "Definizione scheda di allenamento per ipertrofia" },
+      { "date": "2025-06", "event": "Consolidata visione su politica, business e carriera" },
+      { "date": "2025-07", "event": "Vacanza a Riomaggiore (Cinque Terre)" },
+      { "date": "2025-07 → oggi", "event": "Sviluppo app per gestione tasse (forfettari, Python)" },
+      { "date": "2025-11", "event": "Creazione sito personale con Cursor" }
+    ]
+  }
