@@ -13,24 +13,25 @@ const Projects = () => {
             Portfolio
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mb-12">
-            A showcase of my academic and personal projects
+            Selected research and engineering work from my studies and international internships.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((project, index) => (
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+            {projects.map((project) => (
               <Link
-                key={index}
+                key={project.id}
                 to={`/project/${project.id}`}
-                className="group bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-gray-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all hover:shadow-lg block"
+                className="group bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-gray-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all hover:shadow-lg flex flex-col h-full"
               >
-                <div className="relative overflow-hidden h-48">
+                <div className="relative overflow-hidden h-48 shrink-0">
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-1">
                   <div className="text-sm text-primary-600 dark:text-primary-400 font-medium mb-2">
                     {project.category}
                   </div>
@@ -50,7 +51,7 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  <span className="text-primary-600 dark:text-primary-400 hover:underline text-sm font-medium">
+                  <span className="text-primary-600 dark:text-primary-400 hover:underline text-sm font-medium mt-auto">
                     View Details →
                   </span>
                 </div>

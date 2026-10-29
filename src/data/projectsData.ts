@@ -6,7 +6,6 @@ export interface Project {
   technologies: string[]
   image: string
   link?: string
-  // Detailed information for project pages
   fullDescription?: string
   challenges?: string[]
   outcomes?: string[]
@@ -25,139 +24,87 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'trust-tokamak',
-    title: 'TRUST Tokamak - Stabilizer Plates Optimization',
-    category: 'Nuclear Fusion Research',
-    description: 'Analysis and optimization of stabilizer plate positioning to reduce Growth Rate and electromagnetic forces during plasma disruptions.',
-    technologies: ['MATLAB', 'MAXFEA', 'FEM', 'Numerical Analysis'],
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800',
-    fullDescription: `This bachelor thesis project focused on the analysis and optimization of stabilizer plate positioning
-    in the TRUST tokamak at the University of Tuscia. The primary objective was to reduce the Growth Rate during
-    plasma disruptions and minimize electromagnetic forces acting on the vacuum vessel structure.
-
-    The project involved extensive use of MATLAB for numerical calculations and MAXFEA for finite element modeling.
-    Through systematic analysis of different plate configurations, we identified optimal positioning strategies that
-    significantly improved the stability characteristics of the tokamak.`,
-    challenges: [
-      'Modeling complex electromagnetic interactions in a tokamak geometry',
-      'Optimizing multiple competing objectives (growth rate vs. structural forces)',
-      'Validating numerical results against theoretical predictions',
-      'Balancing computational efficiency with model accuracy'
-    ],
-    outcomes: [
-      'Successfully reduced Growth Rate by optimizing stabilizer plate positions',
-      'Developed a systematic methodology for configuration analysis',
-      'Created comprehensive documentation of findings in bachelor thesis',
-      'Contributed to ongoing tokamak research at University of Tuscia'
-    ],
-    documents: [
-      {
-        title: 'Bachelor Thesis - TRUST Tokamak Analysis',
-        url: '#', // User will add the actual URL later
-        type: 'pdf'
-      }
-    ],
-    details: {
-      duration: '2023',
-      role: 'Researcher / Bachelor Student',
-      location: 'University of Tuscia, Italy'
-    }
-  },
-  {
     id: 'swiss-plasma-center',
-    title: 'Swiss Plasma Center Research',
-    category: 'Fusion Engineering',
-    description: 'Framework for simulation code integration and analysis of tokamak reactors such as TCV. Study of operational parameters and configuration optimization.',
-    technologies: ['Python', 'Computational Physics', 'Data Analysis'],
+    title: 'TRUST–MEQ Modelling Framework',
+    category: 'Swiss Plasma Center – EPFL',
+    description: 'Integration of TRUST tokamak numerical models with MEQ, EPFL’s suite for plasma equilibrium analysis.',
+    technologies: ['MATLAB', 'MEQ', 'Numerical modelling', 'Plasma reconstruction'],
     image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800',
-    fullDescription: `Current research internship at the Swiss Plasma Center (EPFL) focusing on advanced simulation
-    frameworks for tokamak analysis. Working with the TCV (Tokamak à Configuration Variable) reactor, developing
-    tools for simulation code integration and operational parameter studies.
-
-    The work involves creating Python-based frameworks that facilitate the integration of various simulation codes,
-    enabling comprehensive analysis of tokamak behavior under different operational scenarios. This research contributes
-    to understanding and optimizing fusion reactor performance.`,
+    fullDescription: [
+      'During my internship at the Swiss Plasma Center – EPFL, I worked on integrating TRUST tokamak numerical models with MEQ, EPFL’s plasma equilibrium analysis suite. The work focused on a framework designed for compatibility with and adaptation to different tokamaks.',
+      'I also contributed to magnetic-coil and diagnostic configuration studies to support plasma profile reconstruction in TRUST.',
+      'My master’s thesis, completed in collaboration with EPFL’s Swiss Plasma Center, addressed the development of a transferable framework connecting MEQ with TRUST and supporting adaptation to next-generation plasma devices.',
+    ].join('\n\n'),
     challenges: [
-      'Integrating multiple simulation codes with different interfaces and requirements',
-      'Handling large-scale computational physics simulations efficiently',
-      'Ensuring accuracy and validation of integrated simulation results',
-      'Developing user-friendly tools for complex scientific workflows'
+      'Integrating TRUST numerical models with the MEQ suite',
+      'Preparing a framework for machine-specific modelling and reconstruction',
+      'Studying magnetic-coil and diagnostic configurations',
     ],
     outcomes: [
-      'Developed framework for simulation code integration',
-      'Contributed to TCV operational studies',
-      'Gained hands-on experience with world-class fusion research',
-      'Ongoing research contributing to fusion energy development'
+      'Developed a framework connecting TRUST numerical models with MEQ',
+      'Contributed to plasma profile reconstruction studies',
+      'Completed a master’s thesis in collaboration with the Swiss Plasma Center',
     ],
     details: {
-      duration: '2024 - Present',
-      role: 'Research Intern',
-      location: 'Swiss Plasma Center, EPFL, Switzerland'
-    }
+      duration: 'Internship: Aug–Nov 2025 · Master’s thesis: completed Oct 2026',
+      role: 'Software Engineer & Project Manager Intern / Master’s thesis student',
+      location: 'Lausanne, Switzerland / Tuscia University, Italy',
+    },
   },
   {
-    id: 'flat-rate-tax-app',
-    title: 'Flat-Rate Tax Management App',
-    category: 'Software Development',
-    description: 'Application to simplify tax management for flat-rate VAT regime holders. Focus on UX and automation of tax calculations.',
-    technologies: ['Python', 'MVP', 'UX Design'],
+    id: 'trust-tokamak',
+    title: 'TRUST Tokamak – Stabilising Plates',
+    category: 'Bachelor’s Thesis',
+    description: 'Analysis and optimisation of stabilising plate positions in the TRUST reactor experiment, using simulation and design analysis.',
+    technologies: ['MATLAB', 'MAXFEA', 'Simulation', 'Design analysis'],
+    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800',
+    fullDescription: [
+      'My bachelor’s thesis at Tuscia University was titled “Analysis and Optimization of the Position of Stabilising Plates in the TRUST Reactor Experiment.”',
+      'The work used MATLAB and MAXFEA for simulation and design analysis of stabilising plate positions in TRUST. It formed part of my BSc in Industrial Engineering, completed in November 2024.',
+    ].join('\n\n'),
+    challenges: [
+      'Analysing stabilising plate positions in the TRUST experiment',
+      'Using numerical simulation to support design comparisons',
+    ],
+    outcomes: [
+      'Completed simulation and design analyses using MATLAB and MAXFEA',
+      'Documented the work in the bachelor’s thesis',
+    ],
+    details: {
+      duration: 'Completed Nov 2024',
+      role: 'BSc thesis student',
+      location: 'Tuscia University, Viterbo, Italy',
+    },
+  },
+  {
+    id: 'pvt-thermal-analysis',
+    title: 'PVT Panel Thermal Analysis',
+    category: 'MG Sustainable Engineering AB',
+    description: 'Simulation-code development for heat-transfer analysis in photovoltaic-thermal panels within the PV+ Solarus project.',
+    technologies: ['Engineering Equation Solver', 'MATLAB', 'Thermal analysis', 'AutoCAD'],
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800',
-    fullDescription: `Developed a software application designed to simplify tax management for individuals and small
-    businesses operating under the flat-rate VAT regime. The project emphasized user experience design and automation
-    of complex tax calculations to reduce manual errors and save time.
-
-    The application was built using Python with a focus on creating an intuitive interface and reliable calculation
-    engine. The MVP approach allowed for rapid iteration based on user feedback.`,
+    fullDescription: [
+      'During my internship at MG Sustainable Engineering AB in Uppsala, Sweden, I contributed to the PV+ Solarus project by developing simulation code in Engineering Equation Solver and MATLAB to analyse heat exchange in photovoltaic-thermal (PVT) panels.',
+      'The work involved collaboration with Gävle University and the preparation of a technical report with recommendations for materials and future design iterations. I also supported schematic development using AutoCAD and produced 2D models to support system integration.',
+    ].join('\n\n'),
     challenges: [
-      'Understanding complex tax regulations and implementing them correctly',
-      'Designing an intuitive UX for users with varying technical backgrounds',
-      'Ensuring calculation accuracy and compliance with tax laws',
-      'Building a maintainable and extensible codebase'
+      'Modelling heat exchange within photovoltaic-thermal panels',
+      'Translating engineering calculations into simulation code',
+      'Documenting results and design recommendations',
     ],
     outcomes: [
-      'Successfully launched MVP with core tax management features',
-      'Positive user feedback on interface simplicity and usability',
-      'Automated error-prone manual calculations',
-      'Gained experience in software product development'
+      'Developed simulation code for PVT thermal analysis',
+      'Prepared a technical report with design recommendations',
+      'Supported schematic development and 2D modelling in AutoCAD',
     ],
     details: {
-      duration: '2023',
-      role: 'Developer / Designer'
-    }
-  },
-  {
-    id: 'villa-nadia',
-    title: 'Villa Nadia - Property Management',
-    category: 'Business Management',
-    description: 'Complete management of short-term rental property. Operational optimization, customer experience, and revenue management.',
-    technologies: ['Operations', 'Booking.com', 'Customer Experience'],
-    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800',
-    fullDescription: `Comprehensive management of a short-term rental property, focusing on operational excellence,
-    customer satisfaction, and revenue optimization. This project involves all aspects of property management from
-    guest communication to maintenance coordination and financial planning.
-
-    The experience has provided valuable insights into business operations, customer service, and the practical
-    application of process optimization techniques in a real-world business context.`,
-    challenges: [
-      'Maintaining high occupancy rates in competitive market',
-      'Ensuring consistent quality of guest experience',
-      'Coordinating maintenance and cleaning operations efficiently',
-      'Managing multiple booking platforms and calendars'
-    ],
-    outcomes: [
-      'Achieved strong occupancy rates and positive guest reviews',
-      'Streamlined operational processes for efficiency',
-      'Developed customer service and business management skills',
-      'Successfully managed all aspects of property operations'
-    ],
-    details: {
-      duration: 'Ongoing',
-      role: 'Property Manager',
-      location: 'Italy'
-    }
+      duration: 'Aug–Oct 2023',
+      role: 'Project Management Intern',
+      location: 'Uppsala, Sweden',
+    },
   },
 ]
 
 export const getProjectById = (id: string): Project | undefined => {
-  return projects.find(project => project.id === id)
+  return projects.find((project) => project.id === id)
 }

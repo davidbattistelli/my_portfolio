@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { getProjectById } from '../data/projectsData'
 import { FiArrowLeft, FiExternalLink, FiFileText, FiGithub } from 'react-icons/fi'
@@ -6,6 +7,10 @@ const ProjectDetail = () => {
   const { projectId } = useParams<{ projectId: string }>()
   const navigate = useNavigate()
   const project = projectId ? getProjectById(projectId) : undefined
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [projectId])
 
   if (!project) {
     return (
@@ -44,7 +49,7 @@ const ProjectDetail = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-slate-900">
       {/* Header with back button */}
       <div className="bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 sticky top-0 z-10">
-        <div className="container-custom py-4">
+        <div className="container-custom py-4 px-4 sm:px-6 lg:px-8">
           <button
             onClick={() => navigate('/')}
             className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -56,23 +61,23 @@ const ProjectDetail = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="relative h-96 overflow-hidden">
+      <div className="relative min-h-[24rem] flex items-end overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 p-8">
+        <div className="relative w-full px-4 py-10 sm:p-8">
           <div className="container-custom">
             <div className="max-w-5xl mx-auto">
               <span className="inline-block px-3 py-1 bg-primary-600 text-white rounded-full text-sm font-medium mb-4">
                 {project.category}
               </span>
-              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+              <h1 className="text-3xl sm:text-5xl font-bold text-white mb-4 leading-tight break-words">
                 {project.title}
               </h1>
-              <p className="text-xl text-gray-200">
+              <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
                 {project.description}
               </p>
             </div>
@@ -81,7 +86,7 @@ const ProjectDetail = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container-custom py-16">
+      <div className="container-custom py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Main Content */}
@@ -185,7 +190,7 @@ const ProjectDetail = () => {
                       {project.details.duration && (
                         <div>
                           <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                            Duration
+                            Period
                           </dt>
                           <dd className="text-gray-900 dark:text-gray-100">
                             {project.details.duration}

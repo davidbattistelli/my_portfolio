@@ -48,7 +48,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
           <a
             href="#home"
             onClick={(e) => handleNavClick(e, '#home')}
-            className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent"
+            className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent"
           >
             David Battistelli
           </a>
