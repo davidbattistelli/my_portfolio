@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assets'
+
 export const profile = {
   name: 'David Battistelli',
   title: 'Mechanical Engineer',
@@ -6,9 +8,8 @@ export const profile = {
   grade: '110/110 with honours',
   graduation: 'October 2026',
   email: 'david.battistelli@hotmail.it',
-  phone: '+39 389 2092376',
-  phoneLink: 'tel:+393892092376',
   linkedin: 'https://www.linkedin.com/in/davidbattistelli/',
+  cvUrl: assetUrl('documents/david-battistelli-cv.pdf'),
   interests: ['Technology', 'Geopolitics', 'Sailing'],
 }
 

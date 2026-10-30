@@ -19,13 +19,16 @@ const Hero = () => {
               International experience at the <strong>Swiss Plasma Center – EPFL</strong> and MG Sustainable Engineering,
               working on numerical modelling, fusion research and thermal analysis.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 pt-4">
               <button onClick={() => scrollToSection('#projects')} className="px-8 py-3 bg-primary-600 dark:bg-primary-700 text-white rounded-lg font-medium hover:bg-primary-700 dark:hover:bg-primary-600 transition-all shadow-lg hover:shadow-xl">
                 View My Work
               </button>
               <button onClick={() => scrollToSection('#contact')} className="px-8 py-3 bg-white dark:bg-slate-800 text-gray-900 dark:text-gray-100 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-slate-700 transition-all shadow-lg hover:shadow-xl border border-gray-200 dark:border-slate-700">
                 Contact Me
               </button>
+              <a href={profile.cvUrl} download="David_Battistelli_CV.pdf" className="inline-flex justify-center items-center px-8 py-3 text-primary-700 dark:text-primary-300 rounded-lg font-medium hover:bg-primary-50 dark:hover:bg-slate-800 transition-colors border border-primary-200 dark:border-slate-600">
+                Download CV (PDF)
+              </a>
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">

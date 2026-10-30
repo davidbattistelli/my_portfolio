@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assets'
+
 export interface Project {
   id: string
   title: string
@@ -5,20 +7,21 @@ export interface Project {
   description: string
   technologies: string[]
   image: string
-  link?: string
-  fullDescription?: string
-  challenges?: string[]
-  outcomes?: string[]
-  documents?: {
+  showHeroImage?: boolean
+  imageAlt: string
+  imageCaption: string
+  fullDescription: string
+  contributions: string[]
+  outcomes: string[]
+  documents: {
     title: string
     url: string
-    type: 'pdf' | 'link' | 'github'
+    description: string
   }[]
-  details?: {
-    duration?: string
-    role?: string
-    team?: string
-    location?: string
+  details: {
+    duration: string
+    role: string
+    location: string
   }
 }
 
@@ -26,24 +29,28 @@ export const projects: Project[] = [
   {
     id: 'swiss-plasma-center',
     title: 'TRUST–MEQ Modelling Framework',
-    category: 'Swiss Plasma Center – EPFL',
-    description: 'Integration of TRUST tokamak numerical models with MEQ, EPFL’s suite for plasma equilibrium analysis.',
+    category: 'Master’s Thesis · Swiss Plasma Center – EPFL',
+    description: 'A transferable framework for tokamak equilibrium modelling and plasma reconstruction, adapted from TCV to TRUST.',
     technologies: ['MATLAB', 'MEQ', 'Numerical modelling', 'Plasma reconstruction'],
-    image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800',
+    image: assetUrl('images/projects/trust-meq-equilibria.webp'),
+    imageAlt: 'Numerical plasma equilibrium configurations for TRUST from the master’s thesis presentation',
+    imageCaption: 'Numerical equilibrium configurations from the MSc thesis presentation, slide 7.',
     fullDescription: [
-      'During my internship at the Swiss Plasma Center – EPFL, I worked on integrating TRUST tokamak numerical models with MEQ, EPFL’s plasma equilibrium analysis suite. The work focused on a framework designed for compatibility with and adaptation to different tokamaks.',
-      'I also contributed to magnetic-coil and diagnostic configuration studies to support plasma profile reconstruction in TRUST.',
-      'My master’s thesis, completed in collaboration with EPFL’s Swiss Plasma Center, addressed the development of a transferable framework connecting MEQ with TRUST and supporting adaptation to next-generation plasma devices.',
+      'This work began during my internship at the Swiss Plasma Center – EPFL and continued through my master’s thesis at Tuscia University. I adapted the machine-specific implementation of MEQ to TRUST while retaining the suite’s generic solver core.',
+      'The thesis, “From TCV to TRUST: Adaptation of the MEQ Framework for Equilibrium Reconstruction and Full-Pulse Simulation,” develops a framework for numerical equilibrium studies and reconstruction from synthetic magnetic signals.',
     ].join('\n\n'),
-    challenges: [
-      'Integrating TRUST numerical models with the MEQ suite',
-      'Preparing a framework for machine-specific modelling and reconstruction',
-      'Studying magnetic-coil and diagnostic configurations',
+    contributions: [
+      'Adapted the TRUST geometry, circuits and magnetic diagnostic configuration to the MEQ framework',
+      'Connected machine-specific numerical models with the equilibrium and reconstruction tools',
+      'Documented the implementation and numerical assessment in the master’s thesis',
     ],
     outcomes: [
-      'Developed a framework connecting TRUST numerical models with MEQ',
-      'Contributed to plasma profile reconstruction studies',
-      'Completed a master’s thesis in collaboration with the Swiss Plasma Center',
+      'A working framework for TRUST equilibrium modelling and plasma reconstruction',
+      'A transferable implementation supporting further machine-specific adaptation and scenario studies',
+    ],
+    documents: [
+      { title: 'Presentation', url: assetUrl('documents/msc-presentation-david-battistelli.pdf'), description: 'PDF · 25 slides' },
+      { title: 'Full thesis', url: assetUrl('documents/msc-thesis-david-battistelli.pdf'), description: 'PDF · 79 pages' },
     ],
     details: {
       duration: 'Internship: Aug–Nov 2025 · Master’s thesis: completed Oct 2026',
@@ -54,21 +61,28 @@ export const projects: Project[] = [
   {
     id: 'trust-tokamak',
     title: 'TRUST Tokamak – Stabilising Plates',
-    category: 'Bachelor’s Thesis',
-    description: 'Analysis and optimisation of stabilising plate positions in the TRUST reactor experiment, using simulation and design analysis.',
-    technologies: ['MATLAB', 'MAXFEA', 'Simulation', 'Design analysis'],
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800',
+    category: 'Bachelor’s Thesis · Tuscia University',
+    description: 'Simulation-based assessment of stabilising plate positions and the balance between plasma stability and electromagnetic loads.',
+    technologies: ['MATLAB', 'MAXFEA', 'Simulation', 'Electromagnetic analysis'],
+    image: assetUrl('images/projects/trust-stabilising-plates.webp'),
+    imageAlt: 'TRUST tokamak geometry and electromagnetic analysis shown in the bachelor’s thesis poster',
+    imageCaption: 'Geometry, modelling workflow and load-analysis plots from the final BSc thesis poster.',
     fullDescription: [
-      'My bachelor’s thesis at Tuscia University was titled “Analysis and Optimization of the Position of Stabilising Plates in the TRUST Reactor Experiment.”',
-      'The work used MATLAB and MAXFEA for simulation and design analysis of stabilising plate positions in TRUST. It formed part of my BSc in Industrial Engineering, completed in November 2024.',
+      'My bachelor’s thesis, “Analysis and Optimization of the Position of Stabilising Plates in the TRUST Experiment,” examined how plate position affects plasma stability and the electromagnetic loads acting on the plates.',
+      'The study combined MATLAB models and MAXFEA analyses to compare configurations and identify a suitable design compromise.',
     ].join('\n\n'),
-    challenges: [
-      'Analysing stabilising plate positions in the TRUST experiment',
-      'Using numerical simulation to support design comparisons',
+    contributions: [
+      'Compared plate configurations using filamentary and RZIP models in MATLAB',
+      'Assessed electromagnetic loads in MAXFEA',
+      'Brought the stability and load analyses together in a design comparison',
     ],
     outcomes: [
-      'Completed simulation and design analyses using MATLAB and MAXFEA',
-      'Documented the work in the bachelor’s thesis',
+      'Identified a compromise between plasma stability and plate loading',
+      'Produced simulation results, comparison plots and a final thesis poster',
+    ],
+    documents: [
+      { title: 'Poster', url: assetUrl('documents/bsc-poster-david-battistelli.pdf'), description: 'PDF · 1 page' },
+      { title: 'Full thesis', url: assetUrl('documents/bsc-thesis-david-battistelli.pdf'), description: 'PDF · 29 pages' },
     ],
     details: {
       duration: 'Completed Nov 2024',
@@ -79,28 +93,67 @@ export const projects: Project[] = [
   {
     id: 'pvt-thermal-analysis',
     title: 'PVT Panel Thermal Analysis',
-    category: 'MG Sustainable Engineering AB',
-    description: 'Simulation-code development for heat-transfer analysis in photovoltaic-thermal panels within the PV+ Solarus project.',
+    category: 'Internship · MG Sustainable Engineering AB',
+    description: 'Steady-state thermal modelling of photovoltaic-thermal panels for the PV+ Solarus project.',
     technologies: ['Engineering Equation Solver', 'MATLAB', 'Thermal analysis', 'AutoCAD'],
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800',
+    image: assetUrl('images/projects/pvt-thermal-network.webp'),
+    imageAlt: 'Thermal resistance network used in the photovoltaic-thermal panel model',
+    imageCaption: 'Figure 1: thermal resistance network from the PVT modelling report.',
     fullDescription: [
-      'During my internship at MG Sustainable Engineering AB in Uppsala, Sweden, I contributed to the PV+ Solarus project by developing simulation code in Engineering Equation Solver and MATLAB to analyse heat exchange in photovoltaic-thermal (PVT) panels.',
-      'The work involved collaboration with Gävle University and the preparation of a technical report with recommendations for materials and future design iterations. I also supported schematic development using AutoCAD and produced 2D models to support system integration.',
+      'During my internship at MG Sustainable Engineering AB in Uppsala, I developed simulation code in Engineering Equation Solver and MATLAB to estimate temperature states within photovoltaic-thermal panels.',
+      'The work formed part of the PV+ Solarus project and involved collaboration with Gävle University. I also supported schematic development and 2D system modelling in AutoCAD.',
     ].join('\n\n'),
-    challenges: [
-      'Modelling heat exchange within photovoltaic-thermal panels',
-      'Translating engineering calculations into simulation code',
-      'Documenting results and design recommendations',
+    contributions: [
+      'Translated heat-transfer balances into a steady-state simulation model',
+      'Documented model assumptions, equations and calculated temperature states',
+      'Supported schematic development and system integration using AutoCAD',
     ],
     outcomes: [
-      'Developed simulation code for PVT thermal analysis',
-      'Prepared a technical report with design recommendations',
-      'Supported schematic development and 2D modelling in AutoCAD',
+      'Simulation code supporting thermal assessment of the PVT panel',
+      'A technical report with material and design recommendations for further development',
+    ],
+    documents: [
+      { title: 'Technical report', url: assetUrl('documents/pvt-thermal-analysis-report.pdf'), description: 'PDF · 11 pages' },
     ],
     details: {
       duration: 'Aug–Oct 2023',
       role: 'Project Management Intern',
       location: 'Uppsala, Sweden',
+    },
+  },
+  {
+    id: 'essential-oil-extractor',
+    title: 'Product Development: From Concept to Virtual Prototype',
+    category: 'Academic project · Tuscia University',
+    description: 'A product developed from scratch through concept design, CAD modelling, thermal and mechanical analysis, and life cycle assessment.',
+    technologies: ['Product development', 'SOLIDWORKS', 'MATLAB', 'ANSYS', 'Life cycle assessment'],
+    image: assetUrl('images/projects/product-development-workflow.svg'),
+    showHeroImage: false,
+    imageAlt: 'Product development workflow showing the CAD assembly alongside concept design, thermal analysis, mechanical analysis and life cycle assessment',
+    imageCaption: 'Development workflow with the original CAD assembly from the project report, Figure 2.',
+    fullDescription: [
+      'Starting from an initial concept, I worked across the full product development process: defining functional requirements, creating the CAD design, selecting materials, and carrying out thermal and mechanical analyses and a preliminary life cycle assessment (LCA).',
+      'A compact essential oil extractor was the application used to bring these disciplines together in a group project for the Virtual Prototyping course at Tuscia University. My work covered every stage, connecting design decisions with analytical models, numerical simulations and environmental assessment.',
+    ].join('\n\n'),
+    contributions: [
+      'Defined functional requirements and developed the product concept and architecture from scratch',
+      'Created the 3D CAD assembly in SOLIDWORKS and selected materials for the main components',
+      'Built thermal models in MATLAB to assess heat transfer and size the insulation',
+      'Set up thermal and mechanical analyses in ANSYS to examine temperature, stress and deformation',
+      'Performed a preliminary life cycle assessment with SOLIDWORKS Sustainability, considering materials, manufacturing, transport and end of life',
+    ],
+    outcomes: [
+      'A virtual prototype with an integrated CAD assembly and documented material choices',
+      'A development workflow connecting design, thermal and mechanical analysis, and environmental assessment',
+      'A technical report documenting the concept, modelling assumptions, simulation outputs and preliminary LCA',
+    ],
+    documents: [
+      { title: 'Project report', url: assetUrl('documents/essential-oil-extractor-report.pdf'), description: 'PDF · 33 pages' },
+    ],
+    details: {
+      duration: 'During MSc studies',
+      role: 'Product design, thermal and mechanical analysis, LCA',
+      location: 'Tuscia University, Viterbo, Italy',
     },
   },
 ]

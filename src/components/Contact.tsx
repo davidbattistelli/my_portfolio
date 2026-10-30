@@ -1,10 +1,9 @@
-import { FaEnvelope, FaLinkedin, FaPhoneAlt } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
 import { profile } from '../data/profileData'
 
 const Contact = () => {
   const contacts = [
     { label: 'Email', text: profile.email, href: 'mailto:' + profile.email, icon: FaEnvelope },
-    { label: 'Mobile', text: profile.phone, href: profile.phoneLink, icon: FaPhoneAlt },
     { label: 'LinkedIn', text: profile.name, href: profile.linkedin, icon: FaLinkedin },
   ]
 

@@ -1,0 +1,190 @@
+{
+  "comparisons": [
+    {
+      "word": "Thesis_David_Battistelli.docx",
+      "pdf": "Thesis_David_Battistelli.pdf",
+      "sampled_text_coverage": 0.955,
+      "pdf_created_after_word": true
+    },
+    {
+      "word": "David Battistelli - Tesi Triennale_v17.4.docx",
+      "pdf": "David Battistelli.pdf",
+      "sampled_text_coverage": 0.9555,
+      "pdf_created_after_word": true
+    }
+  ],
+  "documents": [
+    {
+      "asset": "documents/msc-thesis-david-battistelli.pdf",
+      "source_file": "Thesis_David_Battistelli.pdf",
+      "source_modified": "2026-10-15T11:06:11.515421+02:00",
+      "source_sha256": "66442fe9c43865be8d0a46f1afae3f384ffb21d76b9502e7b14a68f8bf1cea87",
+      "method": "Copied existing PDF exported after the final Word revision",
+      "reference_word": "Thesis_David_Battistelli.docx",
+      "output_sha256": "66442fe9c43865be8d0a46f1afae3f384ffb21d76b9502e7b14a68f8bf1cea87",
+      "output_bytes": 8145113,
+      "pages": 79,
+      "status": "Checked"
+    },
+    {
+      "asset": "documents/bsc-thesis-david-battistelli.pdf",
+      "source_file": "David Battistelli.pdf",
+      "source_modified": "2024-11-25T16:00:24+01:00",
+      "source_sha256": "31b2bd14e1c959a30f39c85e23ac48733c623c5505379f632a847f49aad19ee2",
+      "method": "Copied existing PDF exported after v17.4",
+      "reference_word": "David Battistelli - Tesi Triennale_v17.4.docx",
+      "output_sha256": "31b2bd14e1c959a30f39c85e23ac48733c623c5505379f632a847f49aad19ee2",
+      "output_bytes": 1664517,
+      "pages": 29,
+      "status": "Checked"
+    },
+    {
+      "asset": "documents/bsc-poster-david-battistelli.pdf",
+      "source_file": "Battistelli Poster Triennale.pdf",
+      "source_modified": "2026-07-31T19:38:41.804853+02:00",
+      "source_sha256": "9e3f02d739a2ca1d5e2bc5d218011aab9d96a3f4db4dd2add641179620f1f795",
+      "method": "Copied final PDF dated 26 November 2024, newer than both PowerPoint copies",
+      "reference_word": null,
+      "output_sha256": "9e3f02d739a2ca1d5e2bc5d218011aab9d96a3f4db4dd2add641179620f1f795",
+      "output_bytes": 334616,
+      "pages": 1,
+      "status": "Checked"
+    },
+    {
+      "asset": "documents/msc-presentation-david-battistelli.pdf",
+      "source_file": "PPT_David_Battistelli.pptx",
+      "source_modified": "2026-10-19T16:52:11.265747+02:00",
+      "source_sha256": "8c4fb23d212576214e7d56f549dd1978b794e914e1e8003c9a86d87169afa9e8",
+      "method": "Exported as PDF using installed LibreOffice, isolated temporary profile; source kept unchanged",
+      "reference_word": null,
+      "output_sha256": "2bc37ea0cd3854a72268d70df099004e29e211ec04afba99136566cf1b5fa734",
+      "output_bytes": 6917658,
+      "pages": 25,
+      "status": "Checked"
+    },
+    {
+      "asset": "documents/pvt-thermal-analysis-report.pdf",
+      "source_file": "PVT_Thermal_Model_Report.pdf",
+      "source_modified": "2026-10-29T18:43:32.291784+01:00",
+      "source_sha256": "1d6ed507659e80d80fae122127ee02ea6e56f62eec4ecbe4f489c851ac0a5c01",
+      "method": "Copied the latest PDF exported by David using Microsoft Word after his equation-alignment corrections; retained the matching editable Word in docs/sources. Both copies are byte-for-byte identical to the supplied files.",
+      "reference_word": "PVT_Thermal_Model_Report.docx",
+      "source_pdf_creation": "2026-10-29 18:43:32+01:00",
+      "editorial_revision": true,
+      "output_sha256": "1d6ed507659e80d80fae122127ee02ea6e56f62eec4ecbe4f489c851ac0a5c01",
+      "output_bytes": 401552,
+      "pages": 11,
+      "status": "Latest user export copied unchanged; all 94 reported numerical values checked",
+      "editable_source_sha256": "9ffe76fb8ccc5f35c9439060e01c06ff0cef8052c41bcce57e87227723831874",
+      "rebuild_checks": {
+        "native_equations": 33,
+        "source_values_verified": 94,
+        "all_pages_inspected": true,
+        "unit_label_corrections": [
+          "Conductivity: W/(m K), supported by Herrando et al. Table 2",
+          "Area-normalised resistance S/K: m² K/W",
+          "Specific heat 4186: J/(kg K)",
+          "Stefan–Boltzmann coefficient: W/(m² K⁴)"
+        ]
+      },
+      "original_source_file": "Final Report.pdf",
+      "original_source_modified": "2026-10-29T11:30:04.444658+01:00",
+      "original_source_sha256": "7c50809a69054baf27ec633d052eb4b911041af562fff1c74e0c688fbc2bf2fa",
+      "original_source_pdf_creation": "2023-11-17T11:27:30Z",
+      "reference_word_modified": "2026-10-29T18:42:37.983275+01:00",
+      "editable_source_asset": "docs/sources/PVT_Thermal_Model_Report.docx",
+      "latest_sync_checks": {
+        "pdf_pages_readable": 11,
+        "native_word_equations": 33,
+        "source_values_verified": 94,
+        "pdf_exporter": "Microsoft® Word per Microsoft 365",
+        "source_files_unchanged": true
+      }
+    },
+    {
+      "asset": "documents/david-battistelli-cv.pdf",
+      "source_file": "David_Battistelli_CV_formattato.docx",
+      "source_modified": "2026-10-29T09:54:40.174299+01:00",
+      "source_sha256": "90526be89be28f025c5caee11a201ea5e99c48a0648c9d77e347402576307069",
+      "method": "Exported as PDF using installed LibreOffice, isolated temporary profile; source kept unchanged",
+      "reference_word": null,
+      "output_sha256": "38dc34aa4d92d49343d5aaf36b14b260cb771f49174fdf76bda17ce3a61845b7",
+      "output_bytes": 104740,
+      "pages": 1,
+      "source_text_coverage": 0.9839,
+      "status": "Checked"
+    },
+    {
+      "asset": "documents/essential-oil-extractor-report.pdf",
+      "source_file": "Virtual Prototyping_David Battistelli_Simone Notazio_Vincenzo Rapposelli.pdf",
+      "source_archive": "D:/Università/Magistrale/Exams Done/Virtual Prototyping.rar",
+      "archive_member": "Virtual Prototyping/Virtual Prototyping_David Battistelli_Simone Notazio_Vincenzo Rapposelli.pdf",
+      "source_modified": "2026-01-24T16:29:56.587327+01:00",
+      "source_sha256": "26937a1f9c42c1b1dacde28f0cb09d4b4d05d3dff42d46f63412c0284f04fbb6",
+      "method": "Copied the original academic group report unchanged; website text emphasises development from scratch and the user-confirmed contribution across all phases.",
+      "reference_word": null,
+      "output_sha256": "26937a1f9c42c1b1dacde28f0cb09d4b4d05d3dff42d46f63412c0284f04fbb6",
+      "output_bytes": 9995559,
+      "pages": 33,
+      "status": "Copied unchanged; numerical tables and safety-factor interpretation remain subject to technical review before publication",
+      "scope": "Concept, CAD design, thermal and mechanical analysis, preliminary life cycle assessment; virtual prototype"
+    }
+  ],
+  "figures": [
+    {
+      "asset": "images/projects/trust-meq-equilibria.webp",
+      "source_document": "msc-presentation-david-battistelli.pdf",
+      "page": 7,
+      "render_crop_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "width": 1500,
+      "height": 843,
+      "sha256": "922c4a99bb5e13bd4c11ae1b03fcc62ae6bbb4106b1e5704810b3ebd451b4b05"
+    },
+    {
+      "asset": "images/projects/trust-stabilising-plates.webp",
+      "source_document": "bsc-poster-david-battistelli.pdf",
+      "page": 1,
+      "render_crop_points": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "width": 1500,
+      "height": 844,
+      "sha256": "2648af2d06ad6ce3724b87a3d89881214bd333b3eb26011454bcd689f2388eae"
+    },
+    {
+      "asset": "images/projects/pvt-thermal-network.webp",
+      "source_document": "pvt-thermal-analysis-report.pdf",
+      "page": 2,
+      "width": 963,
+      "height": 167,
+      "sha256": "c480d600891d5129c935161a993ebef36a8d43c4dba2b9215d86039d1047d9ce",
+      "figure": "Figure 1",
+      "source_note": "The unchanged original network from Final Report.pdf page 4 is reproduced as Figure 1 in the rebuilt Word/PDF."
+    },
+    {
+      "asset": "images/projects/product-development-workflow.svg",
+      "source_document": "essential-oil-extractor-report.pdf",
+      "page": 6,
+      "figure": "Figure 2",
+      "width": 1200,
+      "height": 720,
+      "render_clip_points": [
+        315.0,
+        104.0,
+        478.0,
+        278.0
+      ],
+      "method": "Rendered the CAD model region from the original PDF and embedded it unchanged in an SVG diagram describing the documented development stages.",
+      "sha256": "ea814bf9ab130af99dd96a64313a7f61a2837249ed4a734328f41fdf7a1c405d"
+    }
+  ],
+  "source_note": "Selected latest relevant originals found in the project and University folders. Existing thesis PDFs were exported after the latest matching Word revisions; versions and content were compared."
+}
