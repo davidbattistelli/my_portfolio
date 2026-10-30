@@ -9,7 +9,7 @@ export const profile = {
   graduation: 'October 2026',
   email: 'david.battistelli@hotmail.it',
   linkedin: 'https://www.linkedin.com/in/davidbattistelli/',
-  cvUrl: assetUrl('documents/david-battistelli-cv.pdf'),
+  cvUrl: assetUrl('documents/david-battistelli-cv.pdf') + '?v=9c9830ca078e',
   interests: ['Technology', 'Geopolitics', 'Sailing'],
 }
 

@@ -14,7 +14,7 @@ I PDF si trovano in `public/documents/`. Le pagine del sito li richiamano attrav
 | Poster triennale | `Battistelli Poster Triennale.pdf` | PDF creato il 26/11/2024 | 1 | Copia identica. La data interna del PDF è successiva alle due copie PowerPoint del 25/11/2024; la data di modifica del file nel 2026 deriva dalla copia successiva. |
 | Report PVT | `PVT_Thermal_Model_Report.pdf`, esportazione Word aggiornata da David | Word 29/10/2026, ore 18:42; PDF 29/10/2026, ore 18:43 | 11 | Copia identica dell’ultima esportazione Microsoft Word. Sorgente modificabile conservato in `docs/sources/PVT_Thermal_Model_Report.docx`; 33 formule e 94 valori numerici verificati. |
 | Sviluppo prodotto — estrattore | `Virtual Prototyping_David Battistelli_Simone Notazio_Vincenzo Rapposelli.pdf`, archivio Virtual Prototyping | Data del file nell’archivio: 24/01/2026 | 33 | Copia identica della relazione di gruppo; controlli tecnici delle tabelle ancora da completare prima della pubblicazione. |
-| CV | `David_Battistelli_CV_formattato.docx` | 29/10/2026, ore 09:54 | 1 | Nuovo PDF dal Word formattato aggiornato. Non è stato usato il vecchio PDF del CV. |
+| CV | `David_Battistelli_CV_senza_numero.docx` | 30/10/2026 | 1 | PDF pubblico senza telefono. Versioni con e senza numero, Word e PDF, conservate nella cartella CV. |
 
 Gli orari sono indicati nel fuso Europe/Rome. La selezione si basa sul confronto tra nomi, revisioni, contenuti, metadati interni e date di esportazione; non soltanto sulla data di copia del file. Per le tesi è stato confrontato anche il testo dei Word con quello dei PDF.
 
@@ -71,3 +71,9 @@ New Colosseum e gli altri progetti restano rinviati. Le tre schede precedenti e 
 ## Stato e materiali rinviati
 
 Questa fase resta locale e consultabile nell'anteprima. È stato aggiunto soltanto il progetto di sviluppo prodotto descritto sopra; le applicazioni messe in pausa restano escluse. Non sono stati modificati i Word o i PowerPoint originali. Per la pubblicazione si attende la conclusione della revisione insieme a David.
+
+## CV pubblico senza telefono — 30 ottobre 2026
+
+Su richiesta di David sono state preparate nella cartella CV due versioni, ciascuna in Word e PDF: **con_numero** per gli invii diretti e **senza_numero** per la pubblicazione. La copia pubblica conserva l’email e tutto il restante contenuto del CV; la sola modifica nel Word riguarda il prefisso del recapito telefonico nella riga dei contatti. Entrambi i PDF sono di una pagina e la formattazione della versione pubblica è stata controllata visivamente.
+
+Il PDF collegato nel sito è esclusivamente la versione senza numero. Il collegamento include l’identificativo della nuova versione per evitare che venga riutilizzata la copia precedente nella cache del browser. La copia con numero rimane nella cartella CV locale; nessun nuovo file con il recapito telefonico viene aggiunto al sito.

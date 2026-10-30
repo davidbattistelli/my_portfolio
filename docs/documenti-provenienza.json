@@ -103,16 +103,24 @@
     },
     {
       "asset": "documents/david-battistelli-cv.pdf",
-      "source_file": "David_Battistelli_CV_formattato.docx",
-      "source_modified": "2026-10-29T09:54:40.174299+01:00",
-      "source_sha256": "90526be89be28f025c5caee11a201ea5e99c48a0648c9d77e347402576307069",
-      "method": "Exported as PDF using installed LibreOffice, isolated temporary profile; source kept unchanged",
-      "reference_word": null,
-      "output_sha256": "38dc34aa4d92d49343d5aaf36b14b260cb771f49174fdf76bda17ce3a61845b7",
-      "output_bytes": 104740,
+      "source_file": "David_Battistelli_CV_senza_numero.docx",
+      "source_modified": "2026-10-30T09:29:47+01:00",
+      "source_sha256": "786846b98d61c7e29983a08f423f1b4bdc073f0436f88f631dc36a75d5377738",
+      "method": "Public version derived from the latest formatted Word by removing only the telephone prefix from the contact paragraph, then exported to PDF using LibreOffice. The version with a telephone number is retained only in the local CV folder.",
+      "reference_word": "David_Battistelli_CV_senza_numero.docx",
+      "output_sha256": "9c9830ca078e7ec21bcb01a5627c5c216205915331b402d57156a19284fc428c",
+      "output_bytes": 104336,
       "pages": 1,
-      "source_text_coverage": 0.9839,
-      "status": "Checked"
+      "status": "Checked: public PDF contains no phone number; email and all other CV content preserved",
+      "privacy_variant": "Public CV without telephone number",
+      "download_url_version": "9c9830ca078e",
+      "checks": {
+        "word_change_limited_to_contact_prefix": true,
+        "public_phone_present": false,
+        "public_tel_annotations": 0,
+        "other_pdf_text_unchanged": true,
+        "visually_inspected": true
+      }
     },
     {
       "asset": "documents/essential-oil-extractor-report.pdf",
