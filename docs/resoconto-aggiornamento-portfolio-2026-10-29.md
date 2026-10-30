@@ -77,3 +77,9 @@ Questa fase resta locale e consultabile nell'anteprima. È stato aggiunto soltan
 Su richiesta di David sono state preparate nella cartella CV due versioni, ciascuna in Word e PDF: **con_numero** per gli invii diretti e **senza_numero** per la pubblicazione. La copia pubblica conserva l’email e tutto il restante contenuto del CV; la sola modifica nel Word riguarda il prefisso del recapito telefonico nella riga dei contatti. Entrambi i PDF sono di una pagina e la formattazione della versione pubblica è stata controllata visivamente.
 
 Il PDF collegato nel sito è esclusivamente la versione senza numero. Il collegamento include l’identificativo della nuova versione per evitare che venga riutilizzata la copia precedente nella cache del browser. La copia con numero rimane nella cartella CV locale; nessun nuovo file con il recapito telefonico viene aggiunto al sito.
+
+## Collegamento al portfolio nei CV — 30 ottobre 2026
+
+Aggiunto il collegamento cliccabile **Portfolio** accanto all’email nella riga dei contatti di entrambe le versioni Word, con e senza telefono. I due PDF sono stati rigenerati e conservano una pagina; il testo restante è invariato. Il collegamento punta a https://davidbattistelli.github.io/my_portfolio/ e la sua presenza è stata verificata anche nelle annotazioni dei PDF.
+
+Il sito distribuisce il PDF aggiornato della sola versione senza numero, con un nuovo identificativo del download per evitare copie precedenti nella cache. Il promemoria nella cartella CV ricorda di mantenere il link in entrambe le versioni.

@@ -104,23 +104,25 @@
     {
       "asset": "documents/david-battistelli-cv.pdf",
       "source_file": "David_Battistelli_CV_senza_numero.docx",
-      "source_modified": "2026-10-30T09:29:47+01:00",
-      "source_sha256": "786846b98d61c7e29983a08f423f1b4bdc073f0436f88f631dc36a75d5377738",
-      "method": "Public version derived from the latest formatted Word by removing only the telephone prefix from the contact paragraph, then exported to PDF using LibreOffice. The version with a telephone number is retained only in the local CV folder.",
+      "source_modified": "2026-10-30T09:59:06+01:00",
+      "source_sha256": "79f3a617389609c0309761e14c616b838b4c3b23782675fa5e2054e25a15f099",
+      "method": "Exported from the public Word CV, without phone number and with a clickable Portfolio link in the contact line. Both local Word/PDF variants include the portfolio; the private application variant remains outside the website.",
       "reference_word": "David_Battistelli_CV_senza_numero.docx",
-      "output_sha256": "9c9830ca078e7ec21bcb01a5627c5c216205915331b402d57156a19284fc428c",
-      "output_bytes": 104336,
+      "output_sha256": "ee9e44eb4210cb959a68c1c827db32c354e0d0c278de7619df75a81806d76fdc",
+      "output_bytes": 105179,
       "pages": 1,
-      "status": "Checked: public PDF contains no phone number; email and all other CV content preserved",
+      "status": "Checked: one page, clickable portfolio link, no telephone number in public version; remaining CV text preserved",
       "privacy_variant": "Public CV without telephone number",
-      "download_url_version": "9c9830ca078e",
+      "download_url_version": "ee9e44eb4210",
       "checks": {
-        "word_change_limited_to_contact_prefix": true,
+        "portfolio_link_in_both_word_variants": true,
+        "portfolio_link_in_both_pdf_variants": true,
         "public_phone_present": false,
-        "public_tel_annotations": 0,
-        "other_pdf_text_unchanged": true,
+        "other_cv_content_unchanged": true,
+        "both_pdf_variants_one_page": true,
         "visually_inspected": true
-      }
+      },
+      "portfolio_url": "https://davidbattistelli.github.io/my_portfolio/"
     },
     {
       "asset": "documents/essential-oil-extractor-report.pdf",
